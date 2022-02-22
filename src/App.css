@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+3D&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+3D&family=Shizuru&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.App{
+  height: auto;
+  width: 600px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 20px rgb(8, 8, 8);
+}
+.App > div{
+  height: 200px;
+  width:200px ;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(22, 22, 26);
+  border:1px solid rgb(97, 97, 97);
+  box-shadow: inset 0  0 20px black;
+  font-size: 90px;
+ 
+}
+.red{
+  color:#fff;
+ 
+  text-shadow: 0 0 7px rgb(253, 46, 46),
+               0 0 10px rgb(253, 46, 46),
+               0 0 21px rgb(253, 46, 46),
+
+               0 0 42px rgb(235, 12, 12),
+               0 0 82px rgb(235, 12, 12),
+               0 0 92px rgb(235, 12, 12),
+               0 0 102px rgb(235, 12, 12),
+               0 0 151px rgb(235, 12, 12);
+   font-weight: 200;            
+}
+.blue{
+  color:#fff;
+  
+  text-shadow: 0 0 7px rgb(46, 112, 253),
+               0 0 10px rgb(46, 112, 253),
+               0 0 21px rgb(46, 112, 253),
+               0 0 42px rgb(6, 2, 221),
+               0 0 82px rgb(6, 2, 221),
+               0 0 92px rgb(6, 2, 221),
+               0 0 102px rgb(6, 2, 221),
+               0 0 151px rgb(6, 2, 221);
+   font-weight: 200;          
 }
 
-.App-link {
-  color: #61dafb;
+.Header{
+  padding:20px;
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.playerX{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: .5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerX h2{
+  color:#fff;
+  text-shadow: 0 0 7px rgb(253, 46, 46),
+               0 0 10px rgb(253, 46, 46),
+               0 0 21px rgb(253, 46, 46),
+
+               0 0 42px rgb(235, 12, 12),
+               0 0 82px rgb(235, 12, 12),
+               0 0 92px rgb(235, 12, 12),
+               0 0 102px rgb(235, 12, 12),
+               0 0 151px rgb(235, 12, 12);
+  font-weight: 400;
+  font-size: 50px;
+  
+
+}
+.playerX h3{
+  font-family: 'Roboto', sans-serif;
+ font-family: 'Rock 3D', cursive;
+ color:#fff;
+  text-shadow: 0 0 7px rgb(253, 46, 46),
+               0 0 10px rgb(253, 46, 46),
+               0 0 21px rgb(253, 46, 46);
+}
+
+
+.playerO{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: .5;
+}
+
+.playerO h2{
+  color:#fff;
+  
+  text-shadow: 0 0 7px rgb(46, 112, 253),
+               0 0 10px rgb(46, 112, 253),
+               0 0 21px rgb(46, 112, 253),
+
+               0 0 42px rgb(6, 2, 221),
+               0 0 82px rgb(6, 2, 221),
+               0 0 92px rgb(6, 2, 221),
+               0 0 102px rgb(6, 2, 221),
+               0 0 151px rgb(6, 2, 221);
+  font-weight: 400;
+  font-size: 50px;
+  
+
+}
+.playerO h3{
+  font-family: 'Roboto', sans-serif;
+ font-family: 'Rock 3D', cursive;
+ color:#fff;
+  text-shadow: 0 0 7px rgb(46, 112, 253),
+               0 0 10px rgb(46, 112, 253),
+               0 0 21px rgb(46, 112, 253);
+}
+
+.playerX.active{
+  opacity: 1;
+}
+.playerO.active{
+  opacity: 1;
 }
